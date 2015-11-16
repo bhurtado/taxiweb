@@ -1,0 +1,30 @@
+﻿@model IEnumerable<TaxWeb.Model.Importador>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Todos Os Arquivos ", "Todos")
+
+    <form method="post" id="filUpload" enctype="multipart/form-data" action="/Importadors/Importar">
+
+
+
+        <div>
+
+            <input type="file" id="arquivo" name="arquivo" style="width: 87%" />
+
+        </div>
+
+
+
+        <input type="submit" value="Salvar Dados" id="btnSalvar" />
+
+
+
+    </form>
+
+</p>
